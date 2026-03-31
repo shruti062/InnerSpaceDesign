@@ -1,0 +1,143 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card, .video-box {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.project-info h3 {
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.project-info p {
+  color: #555;
+  font-size: 0.9rem;
+}
+/* Section Styling */
+.video-section {
+  padding: 60px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Container */
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Video Card */
+.video-box {
+  width: 380px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.video-box:hover {
+  transform: translateY(-8px);
+}
+
+/* Video Styling */
+.video-box video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Title */
+.video-box p {
+  padding: 12px;
+  font-weight: 500;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .video-box {
+    width: 100%;
+  }
+
+  .video-box video {
+    height: auto;
+  }
+}
+/* POPUP BACKGROUND */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* VIDEO */
+.popup video {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}

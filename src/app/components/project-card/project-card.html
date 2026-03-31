@@ -1,0 +1,17 @@
+<div class="project-card" [class.video-card]="video">
+
+  <!-- IMAGE -->
+  <img *ngIf="image && !video" [src]="image" alt="project">
+
+  <!-- VIDEO -->
+  <video *ngIf="video" controls>
+    <source [src]="video" type="video/mp4">
+  </video>
+
+  <!-- OVERLAY (ONLY FOR IMAGE) -->
+  <div class="overlay" *ngIf="!video">
+    <h3>{{ title }}</h3>
+    <p>{{ category }}</p>
+  </div>
+
+</div>

@@ -1,0 +1,42 @@
+<section class="projects-page">
+  <div class="container">
+    <h1>Our Projects</h1>
+    <p class="subtitle">A showcase of our completed residential, commercial, and industrial works</p>
+
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects"(click)="openImage(project.image)">
+        <img [src]="project.image" [alt]="project.name">
+        <div class="project-info">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.type }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="video-section">
+  <h2>Our Work in Action</h2>
+
+  <div class="video-container">
+    <div class="video-box" *ngFor="let video of videos" (click)="openVideo(video.url)">
+
+      <video controls>
+        <source [src]="video.url" type="video/mp4">
+      </video>
+
+      <p>{{ video.title }}</p>
+
+    </div>
+  </div>
+</section>
+<!-- IMAGE POPUP -->
+<div class="popup" *ngIf="selectedImage" (click)="closePreview()">
+  <img [src]="selectedImage">
+</div>
+
+<!-- VIDEO POPUP -->
+<div class="popup" *ngIf="selectedVideo" (click)="closePreview()">
+  <video controls autoplay>
+    <source [src]="selectedVideo">
+  </video>
+</div>

@@ -1,0 +1,25 @@
+<nav class="navbar">
+  <div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      Innerspace Design Studio
+    </div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a routerLink="/" routerLinkActive="active" (click)="toggleMenu()">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="toggleMenu()">About</a></li>
+      <li><a routerLink="/services" routerLinkActive="active" (click)="toggleMenu()">Services</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active" (click)="toggleMenu()">Projects</a></li>
+      <li><a routerLink="/clients" routerLinkActive="active" (click)="toggleMenu()">Clients</a></li>
+      <li><a routerLink="/contact" class="contact-btn" (click)="toggleMenu()">Contact</a></li>
+    </ul>
+
+    <!-- HAMBURGER -->
+    <div class="menu-toggle" (click)="toggleMenu()">
+      ☰
+    </div>
+
+  </div>
+</nav>

@@ -1,0 +1,15 @@
+<section class="clients-page">
+  <div class="container">
+    <h1>Our Esteemed Clients</h1>
+    <p class="subtitle">
+      Trusted by reputed organizations and institutions
+    </p>
+
+    <div class="clients-grid">
+      <div class="client-card" *ngFor="let client of clients">
+        <img [src]="client.logo" [alt]="client.name">
+        <p>{{ client.name }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -46,7 +46,31 @@
 .footer-col ul li a:hover {
   color: #f59e0b;
 }
+/* SOCIAL ICONS */
+.social-icons {
+  margin-top: 15px;
+}
 
+/* ICON STYLE */
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+  background: #e1306c;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.social-icons a:hover {
+  transform: scale(1.1);
+  background: #c13584;
+}
 /* BOTTOM BAR */
 .footer-bottom {
   text-align: center;

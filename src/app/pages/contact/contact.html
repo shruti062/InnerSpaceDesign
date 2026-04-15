@@ -35,7 +35,7 @@
       <!-- RIGHT FORM -->
       <div class="contact-form">
 
-        <form (ngSubmit)="submitForm()">
+        <form (ngSubmit)="submitForm()" #formRef="ngForm">
 
           <input type="text" placeholder="Your Name" [(ngModel)]="formData.name" name="name" required>
 

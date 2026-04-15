@@ -17,7 +17,25 @@ export class Contact {
   };
 
   submitForm() {
-    console.log(this.formData);
-    alert('Thank you! We will contact you soon.');
-  }
+  const formDataEncoded = new URLSearchParams({
+    'form-name': 'contact',
+    name: this.formData.name,
+    email: this.formData.email,
+    phone: this.formData.phone,
+    message: this.formData.message
+  });
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: formDataEncoded.toString()
+  })
+  .then(() => {
+    alert('Message sent successfully!');
+    this.formData = { name: '', email: '', phone: '', message: '' };
+  })
+  .catch(() => {
+    alert('Something went wrong. Try again!');
+  });
+}
 }

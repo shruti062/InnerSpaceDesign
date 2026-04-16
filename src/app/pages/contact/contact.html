@@ -1,5 +1,14 @@
 <section class="contact">
 
+  <!-- 🔥 Hidden Netlify Form (REQUIRED) -->
+  <form name="contact" method="POST" data-netlify="true" hidden>
+    <input type="hidden" name="form-name" value="contact">
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <input type="text" name="phone">
+    <textarea name="message"></textarea>
+  </form>
+
   <div class="container">
     <h2>Contact Us</h2>
     <p class="subtitle">Let’s discuss your project</p>
@@ -7,35 +16,41 @@
     <div class="contact-wrapper">
 
       <!-- LEFT INFO -->
-     <div class="contact-info">
-  <h3>Get in Touch</h3>
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
 
-  <p><strong>🏢 Company:</strong> Innerspace Design Studio</p>
+        <p><strong>🏢 Company:</strong> Innerspace Design Studio</p>
 
-  <p>
-    <strong>📍 Address:</strong><br>
-    Plot No: 362/3850/5686, Gautam Nagar Street,<br>
-    Beside Utkal Galleria Mall,<br>
-    Bhubaneswar, Khordha, Odisha
-  </p>
+        <p>
+          <strong>📍 Address:</strong><br>
+          Plot No: 362/3850/5686, Gautam Nagar Street,<br>
+          Beside Utkal Galleria Mall,<br>
+          Bhubaneswar, Khordha, Odisha
+        </p>
 
-  <p><strong>📞 Phone:</strong> +91 7978238395</p>
+        <p><strong>📞 Phone:</strong> +91 7978238395</p>
+        <p><strong>📧 Email:</strong> innerspacestudio.in@gmail.com</p>
 
-  <p><strong>📧 Email:</strong> innerspacestudio.in@gmail.com</p>
-
-  <!-- MAP -->
-  <div class="map">
-    <iframe
-      src="https://www.google.com/maps?q=20.2558804,85.8388214&hl=en&z=17&output=embed"
-      frameborder="0">
-    </iframe>
-  </div>
-</div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps?q=20.2558804,85.8388214&hl=en&z=17&output=embed"
+            frameborder="0">
+          </iframe>
+        </div>
+      </div>
 
       <!-- RIGHT FORM -->
       <div class="contact-form">
 
-        <form (ngSubmit)="submitForm()" #formRef="ngForm">
+        <!-- 🔥 MAIN FORM -->
+        <form 
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          (ngSubmit)="submitForm()"
+          #formRef="ngForm"
+        >
+          <input type="hidden" name="form-name" value="contact">
 
           <input type="text" placeholder="Your Name" [(ngModel)]="formData.name" name="name" required>
 

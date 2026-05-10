@@ -1,59 +1,129 @@
-# InnerspaceDesign
+# Innerspace Design Studio Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.4.
+A modern and responsive business website developed for **Innerspace Design Studio**, a company specializing in interior design, civil construction, renovation, project management, and PEB structures.
 
-## Development server
+## 🌐 Live Website
 
-To start a local development server, run:
+innerspacestudio.in
+
+---
+
+# 🚀 Features
+
+* Modern & responsive UI design
+* Professional hero section with background video
+* Services showcase
+* Projects gallery with images & videos
+* Client showcase section
+* Contact form integration
+* Mobile-friendly layout
+* Smooth animations & hover effects
+* SEO-friendly structure
+
+---
+
+# 🛠 Tech Stack
+
+* Angular
+* TypeScript
+* HTML5
+* CSS3
+* Responsive Design
+
+---
+
+# 📂 Project Structure
+
+```bash
+src/
+ ├── app/
+ │   ├── components/
+ │   ├── pages/
+ │   ├── app.routes.ts
+ │
+ ├── assets/
+ │   ├── images/
+ │   ├── videos/
+ │
+ ├── styles.css
+```
+
+---
+
+# 📸 Pages Included
+
+* Home
+* About
+* Services
+* Projects
+* Clients
+* Contact
+  <img width="1888" height="982" alt="Screenshot 2026-05-10 230325" src="https://github.com/user-attachments/assets/5a3d3ddc-3bfb-4e48-8881-a4ee60f01fd0" />
+<img width="1888" height="982" alt="Screenshot 2026-05-10 230325" src="https://github.com/user-attachments/assets/4b47c6fd-65fd-403a-9689-589f8328e197" />
+<img width="1888" height="985" alt="Screenshot 2026-05-10 230447" src="https://github.com/user-attachments/assets/8854690f-87cd-4d6e-b74a-a927a09f41f7" />
+<img width="1880" height="905" alt="Screenshot 2026-05-10 230527" src="https://github.com/user-attachments/assets/bcdb045e-fa00-47f3-ac5e-8ce79d284764" />
+<img width="1882" height="972" alt="Screenshot 2026-05-10 230548" src="https://github.com/user-attachments/assets/4433287f-4b6d-41cd-9eee-31230adb056f" />
+<img width="1893" height="984" alt="Screenshot 2026-05-10 231552" src="https://github.com/user-attachments/assets/1517af4e-a91d-45f7-a199-df6efed1b79a" />
+
+
+---
+
+# ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/InnerspaceDesign.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd InnerspaceDesign
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Open in browser:
 
 ```bash
-ng generate component component-name
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+# 🏗 Deployment
 
-## Building
+The project is deployed with a custom domain and optimized for production hosting.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+# 📬 Contact
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+**Innerspace Design Studio**
+📍 Bhubaneswar, Odisha, India
+📞 +91 7978238395
+📧 [innerspacestudio.in@gmail.com](mailto:innerspacestudio.in@gmail.com)
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+# 👩‍💻 Developer
 
-```bash
-ng test
-```
+Developed by **Shruti Pramanik**
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+# 📄 License
 
-```bash
-ng e2e
-```
+This project is created for business and portfolio purposes.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
